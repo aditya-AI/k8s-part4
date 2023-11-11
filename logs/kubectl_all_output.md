@@ -1,3 +1,4 @@
+```bash
 NAMESPACE       NAME                                                                  READY   STATUS      RESTARTS      AGE
 cert-manager    pod/cert-manager-6856c9896b-zbwtf                                     1/1     Running     0             63m
 cert-manager    pod/cert-manager-cainjector-fc54fdc88-8dqqd                           1/1     Running     0             63m
@@ -117,3 +118,4 @@ NAMESPACE       NAME                                                       REFER
 default         horizontalpodautoscaler.autoscaling/torchserve-predictor   Deployment/torchserve-predictor   0%/80%    1         1         1          46m
 istio-ingress   horizontalpodautoscaler.autoscaling/istio-ingress          Deployment/istio-ingress          4%/80%    1         5         1          74m
 istio-system    horizontalpodautoscaler.autoscaling/istiod                 Deployment/istiod                 0%/80%    1         5         1          74m
+```

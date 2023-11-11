@@ -1,3 +1,4 @@
+```bash
 WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
 2023-11-11T19:39:43,390 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
 2023-11-11T19:39:43,393 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
@@ -1454,3 +1455,4 @@ Model server started.
 2023-11-11T20:20:52,895 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:11334.44921875|#Level:Host|#hostname:torchserve-predictor-556dc4dd84-8bhnq,timestamp:1699734052
 2023-11-11T20:20:52,895 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:3987.94140625|#Level:Host|#hostname:torchserve-predictor-556dc4dd84-8bhnq,timestamp:1699734052
 2023-11-11T20:20:52,895 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:27.8|#Level:Host|#hostname:torchserve-predictor-556dc4dd84-8bhnq,timestamp:1699734052
+```
