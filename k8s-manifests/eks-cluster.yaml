@@ -3,8 +3,7 @@ kind: ClusterConfig
 
 metadata:
   name: basic-cluster
-  # region: ap-south-1
-  region: us-west-2
+  region: ap-south-1
   version: "1.25"
 
 managedNodeGroups:

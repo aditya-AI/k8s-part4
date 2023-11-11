@@ -1,0 +1,199 @@
+python test_sdxl_kserve.py
+^CTraceback (most recent call last):
+  File "/Users/adityasharma/Documents/repositories/k8s-part4/test_sdxl_kserve.py", line 18, in <module>
+    response = requests.post(url, data=json.dumps(input), headers=headers)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Users/adityasharma/miniconda3/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+(base) adityasharma@Adityas-MacBook-Pro k8s-part4 % 
+(base) adityasharma@Adityas-MacBook-Pro k8s-part4 % 
+(base) adityasharma@Adityas-MacBook-Pro k8s-part4 % python test_sdxl_kserve.py
+Traceback (most recent call last):
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/adityasharma/Documents/repositories/k8s-part4/test_sdxl_kserve.py", line 18, in <module>
+    response = requests.post(url, data=json.dumps(input), headers=headers)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+(base) adityasharma@Adityas-MacBook-Pro k8s-part4 % python test_sdxl_kserve.py
+Traceback (most recent call last):
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/adityasharma/Documents/repositories/k8s-part4/test_sdxl_kserve.py", line 18, in <module>
+(base) adityasharma@Adityas-MacBook-Pro k8s-part4 % python test_sdxl_kserve.py
+(base) adityasharma@Adityas-MacBook-Pro k8s-part4 % python test_sdxl_kserve.py
+Traceback (most recent call last):
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Users/adityasharma/miniconda3/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/adityasharma/Documents/repositories/k8s-part4/test_sdxl_kserve.py", line 18, in <module>
+    response = requests.post(url, data=json.dumps(input), headers=headers)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/adityasharma/miniconda3/lib/python3.10/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
