@@ -20,7 +20,7 @@ cd /opt/src
 torch-model-archiver --model-name sdxl --version 1.0 --handler sdxl_handler.py --extra-files sdxl-1.0-model.zip -r requirements.txt
 ```
 
-> This will create `sdxl.mar``
+> This will create `sdxl.mar`
 
 ```bash
 # create a S3 Bucket where we will store these model .mar # files, which will be loaded by KServe
