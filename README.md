@@ -245,7 +245,7 @@ python test_sdxl_kserve.py
 
 [![Watch the video](https://img.youtube.com/vi/14l0vqI1uSg/maxresdefault.jpg)](https://youtu.be/14l0vqI1uSg)
 
-### KServe Graph on Kiali 
+### KServe Logs on Kiali 
 
 [![Watch the video](https://img.youtube.com/vi/a_V2uxH0oYE/maxresdefault.jpg)](https://youtu.be/a_V2uxH0oYE)
 
