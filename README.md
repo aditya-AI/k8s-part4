@@ -213,24 +213,22 @@ python test_sdxl_kserve.py
 
 ## SDXL Inference Results
 
-[sdxl1](https://github.com/aditya-AI/k8s-part4/blob/main/sdxl-output/out_sdxl0.png)
-[sdxl2](https://github.com/aditya-AI/k8s-part4/blob/main/sdxl-output/out_sdxl1.png)
-[sdxl3](https://github.com/aditya-AI/k8s-part4/blob/main/sdxl-output/out_sdxl2.png)
-[sdxl4](https://github.com/aditya-AI/k8s-part4/blob/main/sdxl-output/out_sdxl3.png)
-[sdxl5](https://github.com/aditya-AI/k8s-part4/blob/main/sdxl-output/out_sdxl4.png)
+![sdxl1](sdxl-output/out_sdxl0.png)
+![sdxl2](sdxl-output/out_sdxl1.png)
+![sdxl3](sdxl-output/out_sdxl2.png)
+![sdxl4](sdxl-output/out_sdxl3.png)
+![sdxl5](sdxl-output/out_sdxl4.png)
 
 
 ## Dashboards
 
 ### Kiali KServe Graph
 
-[nodes](https://github.com/aditya-AI/k8s-part4/blob/main/logs/nodes-k8spart4.png)
+![nodes](logs/nodes-k8spart4.png)
 
-[kiali](https://github.com/aditya-AI/k8s-part4/blob/main/logs/kiali-kserv-deploy-graph.png)
+![kiali](logs/kiali-kserv-deploy-graph.png)
 
-[prometheus](https://github.com/aditya-AI/k8s-part4/logs/prometheus-gpu-util.png)
-
-
+![prometheus](logs/prometheus-gpu-util.png)
 
 ## Demo of Grafana and Kiali
 
