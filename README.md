@@ -213,11 +213,11 @@ python test_sdxl_kserve.py
 
 ## SDXL Inference Results
 
-![sdxl1](sdxl-output/out_sdxl0.png)
-![sdxl2](sdxl-output/out_sdxl1.png)
-![sdxl3](sdxl-output/out_sdxl2.png)
-![sdxl4](sdxl-output/out_sdxl3.png)
-![sdxl5](sdxl-output/out_sdxl4.png)
+![sdxl1](sdxl-outputs/out_sdxl0.jpg)
+![sdxl2](sdxl-outputs/out_sdxl1.jpg)
+![sdxl3](sdxl-outputs/out_sdxl2.jpg)
+![sdxl4](sdxl-outputs/out_sdxl3.jpg)
+![sdxl5](sdxl-outputs/out_sdxl4.jpg)
 
 
 ## Dashboards
@@ -226,7 +226,7 @@ python test_sdxl_kserve.py
 
 ![nodes](logs/nodes-k8spart4.png)
 
-![kiali](logs/kiali-kserv-deploy-graph.png)
+![kiali](logs/kiali-kserve-deploy-graph.png)
 
 ![prometheus](logs/prometheus-gpu-util.png)
 
