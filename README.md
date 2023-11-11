@@ -211,4 +211,35 @@ export SERVICE_HOSTNAME=$(kubectl get inferenceservice torchserve -o jsonpath='{
 python test_sdxl_kserve.py
 ```
 
-```bash
+## SDXL Inference Results
+
+[sdxl1](https://github.com/aditya-AI/k8s-part4/sdxl-output/out_sdxl0.png)
+[sdxl2](https://github.com/aditya-AI/k8s-part4/sdxl-output/out_sdxl1.png)
+[sdxl3](https://github.com/aditya-AI/k8s-part4/sdxl-output/out_sdxl2.png)
+[sdxl4](https://github.com/aditya-AI/k8s-part4/sdxl-output/out_sdxl3.png)
+[sdxl5](https://github.com/aditya-AI/k8s-part4/sdxl-output/out_sdxl4.png)
+
+
+## Dashboards
+
+### Kiali KServe Graph
+
+[nodes](https://github.com/aditya-AI/k8s-part3/logs/nodes-k8spart4.png)
+
+[kiali](https://github.com/aditya-AI/k8s-part4/logs/kiali-kserv-deploy-graph.png)
+
+[prometheus](https://github.com/aditya-AI/k8s-part4/logs/prometheus-gpu-util.png)
+
+
+
+## Demo of Grafana and Kiali
+
+### Grafana Dashboard 
+
+[![Watch the video](https://img.youtube.com/vi/14l0vqI1uSg/maxresdefault.jpg)](https://youtu.be/14l0vqI1uSg)
+
+### KServe Graph on Kiali 
+
+[![Watch the video](https://img.youtube.com/vi/wKXTRhUZaVo/maxresdefault.jpg)](https://youtu.be/wKXTRhUZaVo)
+
+
