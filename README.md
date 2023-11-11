@@ -9,5 +9,4 @@ python download_sdxl.py
 bash model_zip.sh
 ```
 
-docker run -it --rm --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --gpus all -v `pwd`:/opt/src pytorch/torchserve:0.8.1-gpu bash
-
+docker run -it --rm --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --gpus all -v $(pwd):/opt/src pytorch/torchserve:0.8.1-gpu bash
