@@ -54,7 +54,7 @@ eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster basic-clu
 eksctl create iamserviceaccount \
   --name s3-list-sa \
   --cluster basic-cluster \
-  --attach-policy-arn arn:aws:iam::103877285477:policy/S3ListTest \
+  --attach-policy-arn arn:aws:iam::ACCOUNT_ID:policy/S3ListTest \
   --approve \
 	--region ap-south-1
 ```
